@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.carousel {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  height: 550px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+}
+
+.btn {
+  background-color: #343498;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 8rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn::focus {
+  outline: none;
+}
+
+.message {
+  transform: translateY(30px);
+}
+
+@media (max-width: 720px) {
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .carousel {
+    width: 400px;
+    height: 450px;
+  }
+
+  .btn {
+    width: 6rem;
+  }
+}
+
+/* important classes for js to move images */
+.carousel1 {
+  transform: translateX(0%);
+}
+.carousel2 {
+  transform: translateX(-100%);
+}
+.carousel3 {
+  transform: translateX(-200%);
+}
+.carousel4 {
+  transform: translateX(-300%);
+}

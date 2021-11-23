@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="script.js" defer></script>
+
+    <!--! fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="image-container carousel1" id="imgs">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                alt="first-image">
+
+            <img src="https://media.istockphoto.com/photos/500px-photo-id-169723937-highlands-scotland-n2016-copyrights-davide-picture-id1284791167?b=1&k=20&m=1284791167&s=170667a&w=0&h=Ztr7-SZTvCmUMWfRIbgKRC-5TkMmCRuvq5oSz3IZxF4="
+                alt="second-image">
+
+            <img src="https://images.unsplash.com/photo-1570325170823-3a6ecda9902c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8NTAwcHh8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                alt="third-image">
+
+            <img src="https://media.istockphoto.com/photos/autumn-leaves-picture-id1279182673?b=1&k=20&m=1279182673&s=170667a&w=0&h=LWpfjjt5XjXR_K7x8CJv5Q64oqcZOUPzY4TO3HKB5aI="
+                alt="fourth-image">
+        </div>
+
+        <div class="button-container">
+            <button class="btn" id="left">
+                <i>Prev</i>
+            </button>
+
+            <button class="btn" id="center">
+                <i class="fas fa-pause"></i>
+            </button>
+
+            <button class="btn" id="right">
+                <i>Next</i>
+            </button>
+        </div>
+    </div>
+
+    <div class="message" id="message">
+        The Carousel Slider is on auto play.
+    </div>
+</body>
+
+</html>
