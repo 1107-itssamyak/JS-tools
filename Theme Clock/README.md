@@ -1,12 +1,10 @@
 ## Image-Carousel
 
-A simple carousel which can be used to for image sliding using css, js.
+A theme clock animation using js, css
 
 # Requirements
 
-Image width is set to be 500x500px, so use accordingly.
-
-For using this in other cases of images sizes, make the class carousel's in css adjust accordingly.
+None
 
 # Images
 
